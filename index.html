@@ -11,6 +11,10 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <script
+      src="https://kit.fontawesome.com/b467cd36f8.js"
+      crossorigin="anonymous"
+    ></script>
 
     <title>Frontend Mentor | Article preview component</title>
     <link rel="stylesheet" href="./css/normalize.css" />
@@ -28,21 +32,21 @@
   </head>
   <body>
     <div class="card">
-      <figure class="main-image">
-        <img src="./images/drawers.jpg" alt="" class="top-image" />
-      </figure>
-      <div class="card-content">
-        <h3>
-          Shift the overall look and feel by adding these wonderful touches to
-          furniture in your home.
-        </h3>
-        <p class="content-info">
-          Ever been in a room and felt like something was missing? Perhaps it
-          felt slightly bare and uninviting. I’ve got some simple tips to help
-          you make any room feel complete.
-        </p>
-        <div class="author">
-          <div class="autor-details">
+      <div class="image-container"></div>
+      <article>
+        <div class="card-info">
+          <h2>
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home.
+          </h2>
+          <p class="content-info">
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I’ve got some simple tips to help
+            you make any room feel complete.
+          </p>
+        </div>
+        <footer>
+          <div class="author">
             <figure>
               <img
                 src="./images/avatar-michelle.jpg"
@@ -50,32 +54,31 @@
                 class="author-img"
               />
             </figure>
-            <div class="author-info">
+            <div class="author-details">
               <p class="author-name">Michelle Appleton</p>
               <p class="date">28 Jun 2020</p>
             </div>
           </div>
-          <button class="share-btn">
-            <img src="./images/icon-share.svg" alt="share image" />
-          </button>
-        </div>
-        <!-- <div class="share" id="hidden">
-          <p>share</p>
-          <div class="social-media-icons">
-            <img src="./images/icon-facebook.svg" alt="facebook" />
-            <img src="./images/icon-twitter.svg" alt="twitter" />
-            <img src="./images/icon-pinterest.svg" alt="pinterest" />
+          <div class="share-btn">
+            <i class="fa-solid fa-share"></i>
           </div>
-          <img
-            src="./images/icon-share.svg"
-            alt="share image"
-            class="share-icon"
-            id="share-icon"
-          />
-        </div> -->
-      </div>
+          <div class="share-box open">
+            <p>share</p>
+            <ul>
+              <li>
+                <a href="#"> <i class="fa-brands fa-square-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </article>
     </div>
-    <!-- end of card-->
 
     <div class="attribution">
       Challenge by
@@ -83,6 +86,7 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
-    <script src="./js/script.js"></script>
+    <!-- <script src="./js/script.js"></script> -->
+    <script src="./js/app.js"></script>
   </body>
 </html>
