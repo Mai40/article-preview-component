@@ -93,7 +93,6 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: cornflowerblue; */
   padding: 0.9375rem 1.875rem;
   position: relative;
 }
@@ -141,7 +140,11 @@ footer {
   justify-content: center;
   align-items: center;
 }
-/* The above code is for the share button.  I had to put a z-index of 1 so that it will show when the share box appears */
+
+.share-btn:hover {
+  background-color: hsl(214, 17%, 51%);
+  color: #fff;
+}
 
 /* Share box styles */
 .share-box {
@@ -186,12 +189,7 @@ footer {
   font-size: 1.3rem;
 }
 
-/* share button - hover, active states */
-
 @media only screen and (min-width: 960px) {
-  /* 
-  The share box becomes hidden so had to add overflow to the card to prevent this
-  */
   .card {
     display: flex;
     height: 18rem;
@@ -214,9 +212,6 @@ footer {
     flex: 1.4;
   }
 
-  /*   .card-info {
-    padding: 3.3rem 2.5rem 1.5rem;
-  } */
   .card-info {
     padding: 3rem 2.5rem 0.4rem;
     padding: 2.7rem 2.5rem 0.4rem;
@@ -232,11 +227,6 @@ footer {
   }
 
   /* Footer */
-
-  /* footer {
-    padding-left: 2.5rem;
-  } */
-
   footer {
     padding-right: 3rem;
   }
@@ -261,7 +251,6 @@ footer {
   }
 
   .share-box ul li {
-    /* display: flex; */
     margin-right: 0.7rem;
   }
 
@@ -278,28 +267,3 @@ footer {
     transform: rotate(0deg);
   }
 }
-
-/* 
-@media min-width: 960px
-This works best - need to investigate why this works
-.image-container {
-    height: 100%;
-    flex: 1;
-  }
-
-  article {  
-    flex: 1.6;
-  } */
-
-/* for the share box to be seen
-  .open class - visiablity: visable and opacity to 1
-
-  using content 
-  .share-box - content is set to empty
-  position - absolute
-  top, left, bottom
-  width, background color
-
-  ALSO
-  there is a trangle positioned under the facebook icon pointing towards the share button
-  */
